@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link type="text/css" href="css/styles.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    
+    <model-viewer bounds="tight" src="assets/model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="assets/poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="assets/ar_hand_prompt.png">
+        </div>
+      </model-viewer>
+    
+  </body>
+</html>
